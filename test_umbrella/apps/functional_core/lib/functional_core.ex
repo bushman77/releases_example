@@ -16,11 +16,4 @@ defmodule FunctionalCore do
     :world
   end
 
-
-#            %Core.OddsTable{
-#                      gid: gid,
-#                      awayml: oddsa,
-#                      homeml: oddsb
-#                    }
-
 end
