@@ -1,6 +1,6 @@
-defmodule Core.OddsTable do
+defmodule Core.Table do
   use Memento.Table,
-    attributes: [:gid, :awayml, :homeml]
+    attributes: [:column_one, :column_two, :column_three]
 
   # You can also define other methods
   # or helper functions in the module
