@@ -15,7 +15,12 @@ defmodule TestUmbrella.MixProject do
         ],
         dev: [
           applications: [
-           service_1: :permanent
+            service_1: :permanent
+          ]
+        ],
+        brain: [
+          applications: [
+              brain: :permanent
           ]
         ]
       ]

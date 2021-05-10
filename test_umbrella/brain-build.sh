@@ -1,6 +1,6 @@
 #!/usr/bin/env bash
 
-mix deps.get --only dev
+mix deps.get --only brain
 MIX_ENV=prod mix compile
 
 #npm install --prefix ./apps/webserver/assets
@@ -9,4 +9,4 @@ MIX_ENV=prod mix compile
 #mix phx.digest
 
 rm -rf "_build"
-MIX_ENV=prod mix release dev
+MIX_ENV=prod mix release brain

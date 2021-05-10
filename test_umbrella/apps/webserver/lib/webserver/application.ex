@@ -10,11 +10,12 @@ defmodule Webserver.Application do
       # Start the Telemetry supervisor
       WebserverWeb.Telemetry,
       # Start the PubSub system
-      {Phoenix.PubSub, name: Webserver.PubSub},
+
+
+#      {Phoenix.PubSub, name: WebserverWeb.PubSub},
       # Start the Endpoint (http/https)
-      WebserverWeb.Endpoint
-      # Start a worker by calling: Webserver.Worker.start_link(arg)
-      # {Webserver.Worker, arg}
+      WebserverWeb.Endpoint,
+      {Phoenix.PubSub, [name: Webserver.PubSub, adapter: Phoenix.PubSub.PG2]}
     ]
 
     # See https://hexdocs.pm/elixir/Supervisor.html

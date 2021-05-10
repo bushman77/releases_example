@@ -1,5 +1,5 @@
 #!/usr/bin/env bash
-rm -rf ./apps/webserver/assets/node_modules
+
 mix deps.get --only prod
 MIX_ENV=prod mix compile
 

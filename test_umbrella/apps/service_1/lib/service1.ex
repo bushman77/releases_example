@@ -9,6 +9,8 @@ defmodule Service1 do
 
   @impl true
   def init(stack) do
+
+IO.inspect(:loaded)
     {:ok, stack}
   end
 
