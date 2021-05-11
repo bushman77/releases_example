@@ -14,7 +14,7 @@ use Mix.Config
 #  cache_static_manifest: "priv/static/cache_manifest.json"
 #
 # System.get_env("SECRET_KEY_BASE")
-# Application.get_env(:webserver, :secret_key_base)
+IO.inspect Application.get_env(:webserver, :secret_key_base)
 config :webserver, WebserverWeb.Endpoint,
   url: [host: "localhost"],
   secret_key_base: "Iei1ZThILl88t1ABUp094C3qpWspWX3+rEZYGyHdv7eCx5sM4z914RPfKXgoIXi0",

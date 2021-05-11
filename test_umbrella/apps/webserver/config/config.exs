@@ -5,9 +5,7 @@
 # is restricted to this project.
 
 # General application configuration
-#use Mix.Config
 import Config
-# Configures the endpoint
 
 # Config now handles loading in the proper configurations
 # Configures Elixir's Logger
@@ -17,8 +15,8 @@ config :logger, :console,
 
 # Use Jason for JSON parsing in Phoenix
 config :phoenix, :json_library, Jason
+
 # Import environment specific config. This must remain at the bottom
 # of this file so it overrides the configuration defined above.
-import_config "release.exs"
+import_config "releases.exs"
 import_config "#{Mix.env}.exs"
-#import_config "../apps/*/config/config.exs"

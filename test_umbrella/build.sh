@@ -1,7 +1,7 @@
 #!/usr/bin/env bash
 
 mix deps.get --only dev
-MIX_ENV=prod mix compile
+MIX_ENV=dev mix compile
 
 #npm install --prefix ./apps/webserver/assets
 #npm run deploy --prefix ./apps/webserver/assets
@@ -9,4 +9,4 @@ MIX_ENV=prod mix compile
 #mix phx.digest
 
 rm -rf "_build"
-MIX_ENV=prod mix release dev
+MIX_ENV=dev mix release dev
