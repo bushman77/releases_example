@@ -1,6 +1,6 @@
 # TestUmbrella
 
-##__Configuring a release in a distributed format<br />
+## Configuring a release in a distributed format<br />
 
 1. Edit rel/env.sh.eex and add the following lines.<br />
 export RELEASE_DISTRIBUTION=name<br />
