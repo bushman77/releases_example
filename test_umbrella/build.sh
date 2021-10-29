@@ -8,5 +8,4 @@ MIX_ENV=dev mix compile
 
 #mix phx.digest
 
-rm -rf "_build"
 MIX_ENV=dev mix release dev

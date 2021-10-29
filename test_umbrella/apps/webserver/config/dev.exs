@@ -12,7 +12,8 @@ config :webserver, WebserverWeb.Endpoint,
   debug_errors: true,
   code_reloader: true,
   check_origin: false,
-pubsub_server: Webserver.PubSub,
+  pubsub_server: Webserver.PubSub,
+  secret_key_base: Application.get_env(:webserver, :secret_key_base),
   watchers: [
     node: [
       "node_modules/webpack/bin/webpack.js",

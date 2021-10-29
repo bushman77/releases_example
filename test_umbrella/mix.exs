@@ -8,16 +8,6 @@ defmodule TestUmbrella.MixProject do
       start_permanent: Mix.env() == :prod,
       deps: deps(),
       releases: [
-        prod: [ 
-          applications: [
-            webserver: :permanent
-          ]
-        ],
-        dev: [
-          applications: [
-            service_1: :permanent
-          ]
-        ],
         brain: [
           applications: [
               brain: :permanent

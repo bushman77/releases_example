@@ -8,5 +8,4 @@ MIX_ENV=prod mix compile
 
 #mix phx.digest
 
-rm -rf "_build"
-MIX_ENV=prod mix release brain
+MIX_ENV=prod mix release brain --overwrite

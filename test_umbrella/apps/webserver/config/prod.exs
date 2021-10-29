@@ -14,10 +14,11 @@ use Mix.Config
 #  cache_static_manifest: "priv/static/cache_manifest.json"
 #
 # System.get_env("SECRET_KEY_BASE")
-IO.inspect Application.get_env(:webserver, :secret_key_base)
+# IO.inspect Application.get_env(:webserver, :secret_key_base)
 config :webserver, WebserverWeb.Endpoint,
   url: [host: "localhost"],
-  secret_key_base: "Iei1ZThILl88t1ABUp094C3qpWspWX3+rEZYGyHdv7eCx5sM4z914RPfKXgoIXi0",
+#  secret_key_base: "Iei1ZThILl88t1ABUp094C3qpWspWX3+rEZYGyHdv7eCx5sM4z914RPfKXgoIXi0",
+  secret_key_base: Application.get_env(:webserver, :secret_key_base),
   render_errors: [view: WebserverWeb.ErrorView, accepts: ~w(html json), layout: false],
   pubsub_server: Webserver.PubSub,
   live_view: [signing_salt: "5vG+iwXd"],
