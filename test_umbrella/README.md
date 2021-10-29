@@ -11,5 +11,5 @@ export RELEASE_COOKIE="some real cookie"<br />
 3. Start your node<br />
   _build/prod/rel/brain/bin/brain start_iex<br />
   
-4. use Node.start_link to execute a prcess on a differnt node.<br />
+4. use Node.start_link to execute a process on a differnt node.<br />
   Node.spawn_link :"bushman@127.0.0.1", fn -> IO.inspect "YAAAY" end<br />
