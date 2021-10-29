@@ -1,7 +1,7 @@
 # TestUmbrella
 
 ## Configuring a release in a distributed format<br />
-
+### This tutorial assumes you already know and understand how to create a mix release and how to open ports to the external world.<br />
 1. Edit rel/env.sh.eex and add the following lines.<br />
 export RELEASE_DISTRIBUTION=name<br />
 export RELEASE_NODE=bushman@127.0.0.1<br />
