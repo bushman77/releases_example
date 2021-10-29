@@ -13,3 +13,4 @@ export RELEASE_COOKIE="some real cookie"<br />
   
 4. use Node.start_link to execute a process on a differnt node.<br />
   Node.spawn_link :"bushman@127.0.0.1", fn -> IO.inspect "YAAAY" end<br />
+5. If running nodes on differnet computers over the internet ensure that port 4369 is avalable and open on the router and allowed through firewalls on each machine
